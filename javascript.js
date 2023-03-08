@@ -28,7 +28,7 @@ const peticion = function (url){
 /*
 const traducir = function(language) {
   console.log(language); //aquí veo si se me ha pasado correctamente el idioma
-    peticion(`.${language}.home.json`)
+    peticion(`./${language}.home.json`)
     .then(objeto => {
       console.log(objeto);
       let elementosATraducir = document.querySelectorAll("[data-translate]");
@@ -46,7 +46,7 @@ const traducir = function(language) {
 const traducir = function(language) {
   console.log(language); //aquí veo si se me ha pasado correctamente el idioma
   if(language === "es") {
-    peticion(".es.home.json")
+    peticion("./es.home.json")
     .then(objeto => {
       console.log(objeto);
       let elementosATraducir = document.querySelectorAll("[data-translate]");
@@ -62,7 +62,7 @@ const traducir = function(language) {
   }
 
   else if(language === "en"){
-    peticion(".en.home.json")
+    peticion("./en.home.json")
     .then(objeto => {
       console.log(objeto);
       let elementosATraducir = document.querySelectorAll("[data-translate]");
