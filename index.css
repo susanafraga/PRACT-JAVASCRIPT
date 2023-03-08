@@ -1,0 +1,558 @@
+/*Esto es para que no haya ningún tipo de margen en mi página*/
+*{
+    margin: 0px;
+}
+
+/*En mi main si quiero algo de margen para que quede más bonito*/
+main{
+    margin-left: 12rem;
+    margin-right: 12rem;
+    margin-top: 0.1rem;
+
+}
+
+/*Ahora edito la parte de arriba que es comun a todas las páginas*/
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    background-color: rgb(234, 233, 231);
+    margin:0px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 150;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 3rem;;
+    
+}
+h3{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 150;
+}
+
+h4{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    padding-top: 0.7rem;
+}
+
+p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 150;
+}
+
+.logo {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+/*Esta es la parte del menu*/
+nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+    background: rgb(53, 53, 159);
+}
+
+nav > a{
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+nav a:hover{
+    color:rgb(98, 98, 130);
+}
+
+/*Empezamos con la parte propia de Inicio*/
+
+.edificio {
+    padding: 0px;
+    margin:0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    
+}
+
+/*Sección sobre nosotros, esto va a ser lo mismo en todas las secciones creadas, pero por si quería cambiar algo luego e
+especificamente, he decidido mantener el formato de cada uno así*/
+.sobreNosotros{
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.sobreNosotros h3{
+    padding-bottom: 0.5rem;
+    background-color: rgb(53, 53, 159);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+/*Así accedo solo al titulo*/
+.sobreNosotros > h3{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+/*Así accedo solo al parrafo*/
+.sobreNosotros p{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.localizacion{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.localizacion h3{
+    padding-bottom: 0.5rem;
+    background-color: rgb(53, 53, 159);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.localizacion > h3{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.localizacion p{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.localizacion iframe{
+    display: block;
+    margin: 0 auto;
+}
+
+.video{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.video h3{
+    padding-bottom: 0.5rem;
+    background-color: rgb(53, 53, 159);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.video > h3{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.video p{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.video iframe{
+    display: block;
+    margin: 0 auto;
+}
+
+/*Parte del footer que es común en todas las páginas*/
+footer {
+    background-color: rgb(53, 53, 159);
+    justify-content: center;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding-top: 0.5rem;
+}
+
+ol{
+    list-style: none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 150;
+    padding: 0.5rem;
+}
+
+
+/*En servicios y instalaciones: aplico lo mismo que index*/
+.resumen{
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.resumen h3{
+    padding-bottom: 0.5rem;
+    background-color: rgb(53, 53, 159);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.resumen > h3{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.resumen p{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.instalaciones{
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.instalaciones h3{
+    padding-bottom: 0.5rem;
+    background-color: rgb(53, 53, 159);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.instalaciones > h3{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.instalaciones p{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+/*Para que las imagenes se me coloquen de esa manera, he tenido que hacerlo asi.
+He creado en html dos clases y que se pusiesen de esta manera en css*/
+.instalaciones .imagenes1 > img{
+    display: inline-block;
+    width: 20%;
+    margin: 1%;
+  
+}
+
+.instalaciones .imagenes2 > img{
+    display: inline-block;
+    width: 20%;
+    margin: 1%;
+    
+}
+
+.comedor{
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.comedor h3{
+    padding-bottom: 0.5rem;
+    background-color: rgb(53, 53, 159);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+    
+}
+
+.comedor > h3{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.comedor p{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+/*Aquí mi tabla sobre los horarios del comedor*/
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 0 auto;
+}
+  
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+  
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.visita{
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.visita h3{
+    padding-bottom: 0.5rem;
+    background-color: rgb(53, 53, 159);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+    
+}
+
+.visita > h3{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.visita p{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+/*En admisiones*/
+.periodo{
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.periodo h3{
+    padding-bottom: 0.5rem;
+    background-color: rgb(53, 53, 159);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+    
+}
+
+.periodo > h3{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.periodo p{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.requisitos{
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.requisitos h3{
+    padding-bottom: 0.5rem;
+    background-color: rgb(53, 53, 159);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+    
+}
+
+.requisitos > h3{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.requisitos p{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+/*Aqui mi formulario de solicitud*/
+.formulario{
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    
+}
+
+.formulario h3{
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: rgb(53, 53, 159);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+    
+}
+
+.formulario > h3{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+ul{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 150;
+    padding: 0.5rem;
+    padding-left: 3rem;
+}
+
+ul >li{
+    padding-top: 0.5rem;
+}
+
+/*Formulario*/
+
+form {
+    margin: 0 auto;
+    padding: 0.5rem;
+    background-color: rgb(234, 233, 231);
+    border-radius: 0.5rem;
+}
+  
+fieldset {
+    margin: 0;
+    padding: 0;
+    border:none;
+}
+  
+legend {
+    margin-bottom: 0.5rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 250;
+}
+  
+/*he dividido en clases para que se colocase de esa manera especifica*/
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+  
+.group {
+    flex-basis: 48%;
+}
+  
+label {
+    display: block;
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+}
+  
+input {
+    display: block;
+    width: 90%;
+    padding: 0.5rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 150;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+  
+button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    color: white;
+    background-color: rgb(53, 53, 159);
+    border-radius: 0.5rem;
+    border: none;
+}
+  
+button:hover {
+    background-color: rgb(83, 83, 221);
+}
+
+/*Quienes somos*/
+.somos{
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.somos h3{
+    padding-bottom: 0.5rem;
+    background-color: rgb(53, 53, 159);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.somos > h3{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.somos p{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.somos iframe{
+    display: block;
+    margin: 0 auto;
+}
+  
+  
